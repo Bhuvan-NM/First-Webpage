@@ -26,7 +26,7 @@
         background-image: -webkit-radial-gradient($color-primary-light, $color-primary-dark);
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         z-index: 1000;
-        transition: transform .8s easeInOutQuint;
+        transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
     }
 
     &_nav {
@@ -38,7 +38,7 @@
 
         opacity: 0;
         width: 0;
-        transition: all .8s;
+        transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     }
 
     &_list {
@@ -65,7 +65,7 @@
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 220%;
-            transition: all .5s;
+            transition: all .5s ;
 
             span {
                 margin: 1.5rem;
